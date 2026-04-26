@@ -173,26 +173,5 @@ TOPページ
     }
 }
 
-/* 波要素 */
 
-.container {
-    position: absolute;
-    bottom: 0;
-    background: hsl(210, 28%, 55%);
-    height: 30vh;
-    width: 100%;
-}
-
-.container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -20px;
-    width: 50%;
-    height: 50%;
-    border-radius: 45%;
-    transform: translateY(0);
-    background: hsl(210, 28%, 55%);
-    animation: waveMove 10s linear infinite;
-}
 
