@@ -22,12 +22,18 @@ a {
 
 p {
     margin: 0;
+    font: Noto Sans JP;
 }
 
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 .abc {
     align-items: center;
+}
+
+h2,
+h3 {
+    margin: 0;
 }
 
 /* -----------------------------
@@ -353,3 +359,19 @@ TOPページ
 about us 
 ----------------------------*/
 
+.about_us {
+    margin-top: 120px;
+    padding-left: 100px;
+    padding-top: 30px;
+    background-image: linear-gradient(210deg, rgba(65, 164, 253, 1), rgb(163, 241, 245));
+}
+
+.about_us h2 {
+    font-size: 32px;
+}
+
+.about_us p {
+    line-height: 2rem;
+    margin-top: 20px;
+    letter-spacing: 0.15rem;
+}
