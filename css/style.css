@@ -17,7 +17,7 @@ nav {
 
 a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
 p {
@@ -313,7 +313,9 @@ TOPページ
 @keyframes rotate {
     from {
         transform: rotate(0deg);
-    } to {
+    }
+
+    to {
         transform: rotate(360deg);
     }
 }
@@ -343,13 +345,16 @@ TOPページ
         transform: translateY(-5px);
         opacity: 0;
     }
+
     30% {
         opacity: 1;
     }
+
     60% {
         transform: translateY(65px);
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
@@ -364,7 +369,8 @@ about us
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
+    overflow: hidden;
     background-image: linear-gradient(210deg, rgba(65, 164, 253, 1), rgb(163, 241, 245));
 }
 
@@ -384,8 +390,33 @@ about us
 
 .about_us_achieve {
     width: 60%;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.about_us_achieve::before {
+    position: absolute;
+    content: "";
+    bottom: -100px;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #2e2e2e, #ffffff00);
+    transform-origin: top;
+    transform: skew(45deg);
+}
+
+.about_us_achieve::after {
+    position: absolute;
+    content: "";
+    right: -100px;
+    width: 100px;
+    height: 100%;
+    transform-origin: left;
+    transform: skew(0, 45deg);
+    background-image: linear-gradient(to right, #2e2e2e, #ffffff00);
 }
 
 .about_us_main {
-    gap: 30px;
+    gap: 60px;
+    display: flex;
 }
