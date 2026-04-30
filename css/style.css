@@ -386,6 +386,7 @@ about us
 
 .about_us_letter {
     width: 40%;
+    height: 300px;
 }
 
 .about_us_achieve {
@@ -393,7 +394,7 @@ about us
     position: relative;
     background-color: #f9f9f9;
     opacity: 0;
-    transform: translate(30px, -30px);
+    transform: translate(30px, 30px);
     transition: all 0.8s ease;
 }
 
