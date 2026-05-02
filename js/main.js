@@ -1,4 +1,5 @@
 const target = document.querySelectorAll('.about_us_achieve');
+import Chart from 'chart.js/auto';
 
 const obs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -13,3 +14,4 @@ const obs = new IntersectionObserver((entries) => {
 target.forEach(t => obs.observe(t));
 
 console.log(document.querySelectorAll(".about_us_achieve"));
+

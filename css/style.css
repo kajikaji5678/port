@@ -396,6 +396,7 @@ about us
     opacity: 0;
     transform: translate(30px, 30px);
     transition: all 0.8s ease;
+    display: flex;
 }
 
 .about_us_achieve.show {
@@ -487,4 +488,13 @@ about us
     top: -5px;
     right: -2px;
     transform: rotate(45deg);
+}
+
+/* チャート図のスタイリングをする */
+.chart {
+    width: 33%;
+}
+
+.chart:not(:last-of-type) {
+    margin-right: 30px;
 }
