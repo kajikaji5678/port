@@ -493,8 +493,14 @@ about us
 /* チャート図のスタイリングをする */
 .chart {
     width: 33%;
+    min-height: 300px;
 }
 
 .chart:not(:last-of-type) {
     margin-right: 30px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
 }
