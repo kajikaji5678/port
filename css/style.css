@@ -378,15 +378,15 @@ about us
     font-size: 32px;
 }
 
-.about_us p {
-    line-height: 2rem;
-    margin-top: 20px;
-    letter-spacing: 0.15rem;
-}
 
 .about_us_letter {
     width: 40%;
-    height: 300px;
+}
+
+.about_us_letter_text {
+    margin-top: 20px;
+    line-height: 2rem;
+    letter-spacing: 0.15rem;
 }
 
 .about_us_achieve {
@@ -428,4 +428,63 @@ about us
 .about_us_main {
     gap: 60px;
     display: flex;
+    box-sizing: border-box;
+}
+
+/* 共通ボタン設置 */
+
+.main_button_1 {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 80px;
+    background-color: #f9f9f9;
+    width: max-content;
+    height: max-content;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 6px #2e2e2e;
+    transition: 0.25s;
+}
+
+.main_button_1:hover {
+    box-shadow: 0 0;
+    transform: translate(6px, 6px);
+}
+
+.main_button_1_text {
+    line-height: 2rem;
+    margin-top: 20px;
+}
+
+.arrow_box_circle {
+    position: absolute;
+    background-color: rgb(109, 128, 211);
+    top: -5px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.arrow_stick {
+    position: absolute;
+    background: #2e2e2e;
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    left: 20%;
+}
+
+.arrow_stick::after {
+    content: "";
+    position: absolute;
+    background: #2e2e2e;
+    width: 15px;
+    height: 2px;
+    top: -5px;
+    right: -2px;
+    transform: rotate(45deg);
 }
