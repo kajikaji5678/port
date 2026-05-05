@@ -20,7 +20,8 @@ a {
     color: inherit;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
     padding-left: 0;
 }
@@ -510,9 +511,9 @@ canvas {
     height: 100% !important;
 }
 
-/* ---------------------------------
+/* ----------------------------------------------------
 キャリアアップ
----------------------------------*/
+-----------------------------------------------------*/
 
 .career {
     padding-left: 100px;
@@ -525,4 +526,46 @@ canvas {
 
 .about_us_letter_2 {
     width: 30%;
+}
+
+/* ------------------------ タブ機能 ---------------------- */
+
+.tab_group {
+    width: 70%;
+    border-radius: 16px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.tab_button {
+    display: flex;
+    position: absolute;
+    top: -62px;
+    left: 10px;
+}
+
+.tab {
+    width: 100px;
+    padding: 10px 20px;
+    border: 2px solid #1d0046;
+    border-bottom: 0px;
+    border-radius: 4px;
+    background-color: #c5d0ff;
+}
+
+.tab:not(:first-child) {
+    margin-left: 20px;
+}
+
+.tab_button .active {
+    background-color: #6d80d3;
+}
+
+.content {
+    display: none;
+    padding: 8px;
+}
+
+.tab_contents .display {
+    display: block;
 }
