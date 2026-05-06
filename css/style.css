@@ -537,7 +537,7 @@ canvas {
     border-radius: 16px;
     background-color: #f9f9f9;
     position: relative;
-    height: 600px;
+    height: 700px;
 }
 
 .tab_button {
@@ -588,7 +588,6 @@ canvas {
 .tab_stepup_top {
     height: 70%;
     width: 100%;
-    background-color: #1d0046;
     margin-bottom: 30px;
     display: flex;
     text-align: center;
@@ -611,7 +610,11 @@ canvas {
 .tab_top_5 {
     width: 20%;
     height: 100%;
-    background-color: #fcd93d;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .tab_top_2,
@@ -645,3 +648,115 @@ canvas {
     padding: 5px;
 }
 
+.tab_top_1 .tab_job_content {
+    padding: 10px;
+}
+
+.tab_top_1 .emegency2 {
+    height: 35%;
+}
+
+.tab_top_2 .tab_job_content {
+    padding: 15px;
+}
+
+.tab_top_2 .emegency2 {
+    height: 40%;
+}
+
+.tab_top_3 .tab_job_content {
+    padding: 20px 15px;
+}
+
+.tab_top_4 .tab_job_content {
+    padding: 30px 15px;
+}
+
+.tab_top_3 .emegency2 {
+    height: 50%;
+}
+
+.tab_top_4 .emegency2 {
+    height: 60%;
+}
+
+.tab_top_5 .tab_job_content {
+    padding: 40px 15px;
+}
+
+.tab_top_5 .emegency2 {
+    height: 70%;
+}
+
+.tab_job_name {
+    font-weight: 600;
+    font-size: 22px;
+    color: #6bdc9a;
+    padding: 5px;
+}
+
+/* --------------------- 色変え --------------------- */
+.tab_top_1 .tab_job_content{
+    background-color: #6bdc9a;
+}
+
+.tab_top_2 .tab_job_name{
+    color: #6bdcc9;
+}
+
+.tab_top_2 .tab_job_content{
+    background-color: #6bdcc9;
+}
+
+.tab_top_2 .tab_top_year{
+    background-color: #6bdcc9;
+}
+
+.tab_top_3 .tab_job_name{
+    color: #6bcfdc;
+}
+
+.tab_top_3 .tab_job_content{
+    background-color: #6bcfdc;
+}
+
+.tab_top_3 .tab_top_year{
+    background-color: #6bcfdc;
+}
+
+.tab_top_4 .tab_job_name {
+    color:#6bafdc;
+}
+
+.tab_top_4 .tab_job_content{
+    background-color: #6bafdc;
+}
+
+.tab_top_4 .tab_top_year{
+    background-color: #6bafdc;
+}
+
+.tab_top_5 .tab_job_name {
+    color:#6b85dc;
+}
+
+.tab_top_5 .tab_job_content{
+    background-color: #6b85dc;
+}
+
+.tab_top_5 .tab_top_year{
+    background-color: #6b85dc;
+}
+
+.tab_job_content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f9f9f9;
+}
+
+.tab_job_content {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #6d80d3;
+    height: 100%;
+}
