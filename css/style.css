@@ -557,7 +557,12 @@ canvas {
     margin-left: 20px;
 }
 
-.tab_button .active {
+.tab.active {
+    width: 100px;
+    padding: 10px 20px;
+    border: 2px solid #1d0046;
+    border-bottom: 0px;
+    border-radius: 4px;
     background-color: #6d80d3;
 }
 
@@ -566,6 +571,6 @@ canvas {
     padding: 8px;
 }
 
-.tab_contents .display {
+.content.display {
     display: block;
 }
