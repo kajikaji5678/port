@@ -725,55 +725,55 @@ canvas {
 }
 
 /* --------------------- 色変え --------------------- */
-.tab_top_1 .tab_job_content{
+.tab_top_1 .tab_job_content {
     background-color: #6bdc9a;
 }
 
-.tab_top_2 .tab_job_name{
+.tab_top_2 .tab_job_name {
     color: #6bdcc9;
 }
 
-.tab_top_2 .tab_job_content{
+.tab_top_2 .tab_job_content {
     background-color: #6bdcc9;
 }
 
-.tab_top_2 .tab_top_year{
+.tab_top_2 .tab_top_year {
     background-color: #6bdcc9;
 }
 
-.tab_top_3 .tab_job_name{
+.tab_top_3 .tab_job_name {
     color: #6bcfdc;
 }
 
-.tab_top_3 .tab_job_content{
+.tab_top_3 .tab_job_content {
     background-color: #6bcfdc;
 }
 
-.tab_top_3 .tab_top_year{
+.tab_top_3 .tab_top_year {
     background-color: #6bcfdc;
 }
 
 .tab_top_4 .tab_job_name {
-    color:#6bafdc;
+    color: #6bafdc;
 }
 
-.tab_top_4 .tab_job_content{
+.tab_top_4 .tab_job_content {
     background-color: #6bafdc;
 }
 
-.tab_top_4 .tab_top_year{
+.tab_top_4 .tab_top_year {
     background-color: #6bafdc;
 }
 
 .tab_top_5 .tab_job_name {
-    color:#6b85dc;
+    color: #6b85dc;
 }
 
-.tab_top_5 .tab_job_content{
+.tab_top_5 .tab_job_content {
     background-color: #6b85dc;
 }
 
-.tab_top_5 .tab_top_year{
+.tab_top_5 .tab_top_year {
     background-color: #6b85dc;
 }
 
@@ -801,4 +801,93 @@ canvas {
     padding-bottom: 60px;
     overflow: hidden;
     background-image: linear-gradient(30deg, rgb(52, 177, 89), rgb(163, 255, 220));
+}
+
+.interview_slider {
+    width: 70%;
+    height: 600px;
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+.interview_arrow {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 0;
+    border: 1px solid black;
+    right: 0;
+}
+
+.interview_arrow_2 {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 0;
+    border: 1px solid black;
+    right: 100px;
+}
+
+.interview_arrow::before,
+.interview_arrow_2::before {
+    position: absolute;
+    background-color: #333;
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 37px;
+    right: 20px;
+}
+
+.interview_arrow::after {
+    position: absolute;
+    background-color: #333;
+    content: "";
+    width: 25px;
+    height: 2px;
+    top: 28px;
+    right: 17px;
+    transform: rotate(45deg);
+}
+
+.interview_arrow_2::after {
+    position: absolute;
+    background-color: #333;
+    content: "";
+    width: 25px;
+    height: 2px;
+    top: 29px;
+    right: 30px;
+    transform: rotate(-45deg);
+}
+
+
+.card_active {
+    width: 30%;
+    height: 100%;
+}
+
+.interview_image {
+    width: 100%;
+    height: 70%;
+}
+
+.interview_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail_name {
+    font-size: 32px;
+    color: #6bafdc;
+    font-weight: 500;
+}
+
+.detail_job {
+    font-size: 24px;
+    color: #6bafdc;
+    font-weight: 600;
 }
