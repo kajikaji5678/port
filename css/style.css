@@ -806,8 +806,10 @@ canvas {
 .interview_slider {
     width: 70%;
     height: 600px;
-    background-color: #F9F9F9;
     position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
 }
 
 .interview_arrow {
@@ -864,9 +866,16 @@ canvas {
 }
 
 
-.card_active {
-    width: 30%;
+.card.card_active {
+    width: 40%;
     height: 100%;
+    flex: 2;
+}
+
+.card {
+    width: 20%;
+    height: 70%;
+    flex: 1;
 }
 
 .interview_image {
@@ -880,14 +889,22 @@ canvas {
     object-fit: cover;
 }
 
+.detail.hide {
+    display: none;
+}
+
+.detail.show {
+    display: block;
+}
+
 .detail_name {
     font-size: 32px;
-    color: #6bafdc;
+    color: #ffffff;
     font-weight: 500;
 }
 
 .detail_job {
     font-size: 24px;
-    color: #6bafdc;
+    color: #ffffff;
     font-weight: 600;
 }
