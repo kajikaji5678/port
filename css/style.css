@@ -929,3 +929,26 @@ canvas {
     color: #ffffff;
     font-weight: 600;
 }
+
+footer {
+    background-color: #F5F5F5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.footer {
+    width: 20%;
+    flex: 1;
+}
+
+.footer ul {
+    margin-left: 10px;
+}
+
+.footer li {
+    font-family: yu-gothic-pr6n;
+}
