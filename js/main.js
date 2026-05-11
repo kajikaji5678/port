@@ -1,4 +1,4 @@
-// import Chart from 'chart.js/auto';
+import Chart from 'chart.js/auto';
 const target = document.querySelectorAll('.about_us_achieve');
 import { interviewData } from "./data.js";
 
@@ -81,14 +81,72 @@ console.log(document.querySelectorAll(".about_us_achieve"));
 new Chart(document.getElementById('about_us_chart_1'), {
     type: 'pie',
     data: {
-        labels: ['A', 'B', 'C'],
+        labels: ['はい', 'いいえ'],
         datasets: [{
-            data: [30, 50, 20]
+            data: [90, 10],
+            hoverOffset: 20
         }]
     },
     options: {
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: true,
+    },
+});
+
+new Chart(document.getElementById('about_us_chart_2'), {
+    type: 'radar',
+    data: {
+        labels: [
+            'LP制作',
+            'WordPress制作',
+            'SEO対策コラム作成',
+            'Twitter運用',
+            'システム開発'
+        ],
+        datasets: [{
+            label: '弊社の業績',
+            data: [30, 40, 60, 50, 50],
+            fill: true
+        }]
+    },
+    options: {
+        scales: {
+            r: {
+                min: 10,
+                max: 60,
+                ticks: {
+                    stepSize: 10
+                }
+            }
+        },
+        elements: {
+            line: {
+                borderWidth: 3
+            }
+        },
+        responsive: true,
+        maintainAspectRatio: true
     }
 });
 
+new Chart(document.getElementById('about_us_chart_3'), {
+    type: 'line',
+    data: {
+        labels: [
+            '2023年',
+            '2024年',
+            '2025年',
+            '2026年'
+        ],
+        datasets: [
+            {
+                label: '合計売上金額',
+                data: [10, 20, 25, 60]
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: true
+    }
+})
